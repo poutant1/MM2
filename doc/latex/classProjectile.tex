@@ -1,0 +1,91 @@
+\hypertarget{classProjectile}{}\section{Projectile Class Reference}
+\label{classProjectile}\index{Projectile@{Projectile}}
+
+
+{\ttfamily \#include $<$projectile.\+hpp$>$}
+
+Inheritance diagram for Projectile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classProjectile}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProjectile_a2ac17690fe70259fee93ec2d9be115d3}{Projectile} (Vector2d pos, Vector2d sp, double m, sf\+::\+Texture \&tex, std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$ w)
+\item 
+void \hyperlink{classProjectile_aa3781e4c9023c6d0306da7239987f9f7}{update\+State} (double dt)
+\item 
+void \hyperlink{classProjectile_abfd30c4ad89a47b267e269b9b6ab1300}{collide} (\hyperlink{classWall}{Wall} \&w)
+\item 
+virtual void \hyperlink{classProjectile_a5dbfa02e6e14a2149240762aa1e50403}{collide} (\hyperlink{classObject}{Object} \&o)
+\item 
+bool \hyperlink{classProjectile_abdb99a309b640e906790d93ad42511a4}{is\+Hit} ()
+\item 
+void \hyperlink{classProjectile_a6a409515a2e255b25ca80ee031d9a771}{set\+Hit} ()
+\item 
+bool \hyperlink{classProjectile_a02f748270bc39583e3268a88664f928e}{max\+Distance\+Surpassed} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class for the projectiles. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classProjectile_a2ac17690fe70259fee93ec2d9be115d3}{}\label{classProjectile_a2ac17690fe70259fee93ec2d9be115d3} 
+\index{Projectile@{Projectile}!Projectile@{Projectile}}
+\index{Projectile@{Projectile}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{Projectile()}{Projectile()}}
+{\footnotesize\ttfamily Projectile\+::\+Projectile (\begin{DoxyParamCaption}\item[{Vector2d}]{pos,  }\item[{Vector2d}]{sp,  }\item[{double}]{m,  }\item[{sf\+::\+Texture \&}]{tex,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$}]{w }\end{DoxyParamCaption})}
+
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classProjectile_abfd30c4ad89a47b267e269b9b6ab1300}{}\label{classProjectile_abfd30c4ad89a47b267e269b9b6ab1300} 
+\index{Projectile@{Projectile}!collide@{collide}}
+\index{collide@{collide}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{collide()}{collide()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Projectile\+::collide (\begin{DoxyParamCaption}\item[{\hyperlink{classWall}{Wall} \&}]{w }\end{DoxyParamCaption})}
+
+Collides the projectile with a wall. \hypertarget{classProjectile_a5dbfa02e6e14a2149240762aa1e50403}{}\label{classProjectile_a5dbfa02e6e14a2149240762aa1e50403} 
+\index{Projectile@{Projectile}!collide@{collide}}
+\index{collide@{collide}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{collide()}{collide()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Projectile\+::collide (\begin{DoxyParamCaption}\item[{\hyperlink{classObject}{Object} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Collides the projectile with an object. 
+
+Implements \hyperlink{classObject}{Object}.
+
+\hypertarget{classProjectile_abdb99a309b640e906790d93ad42511a4}{}\label{classProjectile_abdb99a309b640e906790d93ad42511a4} 
+\index{Projectile@{Projectile}!is\+Hit@{is\+Hit}}
+\index{is\+Hit@{is\+Hit}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{is\+Hit()}{isHit()}}
+{\footnotesize\ttfamily bool Projectile\+::is\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the object is hit or not. \hypertarget{classProjectile_a02f748270bc39583e3268a88664f928e}{}\label{classProjectile_a02f748270bc39583e3268a88664f928e} 
+\index{Projectile@{Projectile}!max\+Distance\+Surpassed@{max\+Distance\+Surpassed}}
+\index{max\+Distance\+Surpassed@{max\+Distance\+Surpassed}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{max\+Distance\+Surpassed()}{maxDistanceSurpassed()}}
+{\footnotesize\ttfamily bool Projectile\+::max\+Distance\+Surpassed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks whether the projectile has traveled its maximum distance. \hypertarget{classProjectile_a6a409515a2e255b25ca80ee031d9a771}{}\label{classProjectile_a6a409515a2e255b25ca80ee031d9a771} 
+\index{Projectile@{Projectile}!set\+Hit@{set\+Hit}}
+\index{set\+Hit@{set\+Hit}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{set\+Hit()}{setHit()}}
+{\footnotesize\ttfamily void Projectile\+::set\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the projectile as hit. \hypertarget{classProjectile_aa3781e4c9023c6d0306da7239987f9f7}{}\label{classProjectile_aa3781e4c9023c6d0306da7239987f9f7} 
+\index{Projectile@{Projectile}!update\+State@{update\+State}}
+\index{update\+State@{update\+State}!Projectile@{Projectile}}
+\subsubsection{\texorpdfstring{update\+State()}{updateState()}}
+{\footnotesize\ttfamily void Projectile\+::update\+State (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Updates the state of the projectile, meaning both its position and sprite. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/projectile.\+hpp\item 
+src/projectile.\+cpp\end{DoxyCompactItemize}

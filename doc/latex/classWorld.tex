@@ -1,0 +1,173 @@
+\hypertarget{classWorld}{}\section{World Class Reference}
+\label{classWorld}\index{World@{World}}
+
+
+{\ttfamily \#include $<$world.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWorld_a5160225e83eae7837e624ef90d4db29f}{add\+Vehicle} (Vehicle\+Ptr v)
+\item 
+void \hyperlink{classWorld_a0dabad321c25115c1899d53b0525f1ff}{add\+Projectile} (Projectile\+Ptr p)
+\item 
+void \hyperlink{classWorld_aee0ecea7671c2b87896ae48e2b8b4db0}{add\+Wall} (Wall\+Ptr w)
+\item 
+void \hyperlink{classWorld_ae732dc0bbb384d5799c17b18f20ff52d}{add\+Check\+Points} (std\+::vector$<$ Cp\+Ptr $>$ c)
+\item 
+void \hyperlink{classWorld_a6cfa1ac0ab2d191cddb6273119b2e8b6}{add\+Mines} (std\+::vector$<$ Mine\+Ptr $>$ m)
+\item 
+void \hyperlink{classWorld_afbde7c41f335e5abdf67935e4ef39d12}{add\+Map} (Map\+Ptr m)
+\item 
+void \hyperlink{classWorld_a0fa5babafd1bb5749f7f3d664cf996c5}{add\+Vehicle\+Info} (std\+::shared\+\_\+ptr$<$ \hyperlink{structVehicleInfo}{Vehicle\+Info} $>$)
+\item 
+std\+::vector$<$ Vehicle\+Ptr $>$ \hyperlink{classWorld_afa144f2f17a04087776721af7b225387}{get\+Vehicles} () const
+\item 
+std\+::vector$<$ Projectile\+Ptr $>$ \hyperlink{classWorld_a52e57fb3229773869172a71d49b29783}{get\+Projectiles} () const
+\item 
+Map\+Ptr \hyperlink{classWorld_a37b996591688a176897dc8157cdbb18d}{get\+Map} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structVehicleInfo}{Vehicle\+Info} $>$ \hyperlink{classWorld_a74d8300035e9495d954e5f6ef90b64b5}{get\+Vehicle\+Info} () const
+\item 
+std\+::vector$<$ Wall\+Ptr $>$ \hyperlink{classWorld_a2abd0169432b982782a77914bffd3fa0}{get\+Walls} () const
+\item 
+std\+::vector$<$ Cp\+Ptr $>$ \hyperlink{classWorld_a86ec41dd36a293bd86f6ed9070863c19}{get\+Check\+Points} () const
+\item 
+std\+::vector$<$ Mine\+Ptr $>$ \hyperlink{classWorld_a0003fd04b63a37ae393879083f2db673}{get\+Mines} () const
+\item 
+int \hyperlink{classWorld_a976371693de928677ae490df24519696}{get\+Lap\+Total} () const
+\item 
+std\+::vector$<$ sf\+::\+View $>$ \hyperlink{classWorld_acc906e59c83bbed0da781ae9e4981d4c}{set\+Views} (Window \&w) const
+\item 
+void \hyperlink{classWorld_a1958eb9641efaa29bff034f4e076f10a}{set\+Font} (std\+::shared\+\_\+ptr$<$ sf\+::\+Font $>$ f)
+\item 
+void \hyperlink{classWorld_aea52953b00dfbea7766176454206b007}{update\+State} (double dt)
+\item 
+void \hyperlink{classWorld_acf70b954c41a9c086d8678da4b95a9a4}{draw} (Window \&w)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that contains the game world and everything in it. Is responsible for updating the game logic as well as drawing the game world. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWorld_ae732dc0bbb384d5799c17b18f20ff52d}{}\label{classWorld_ae732dc0bbb384d5799c17b18f20ff52d} 
+\index{World@{World}!add\+Check\+Points@{add\+Check\+Points}}
+\index{add\+Check\+Points@{add\+Check\+Points}!World@{World}}
+\subsubsection{\texorpdfstring{add\+Check\+Points()}{addCheckPoints()}}
+{\footnotesize\ttfamily void World\+::add\+Check\+Points (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Cp\+Ptr $>$}]{c }\end{DoxyParamCaption})}
+
+Adds the map checkpoints to world. \hypertarget{classWorld_afbde7c41f335e5abdf67935e4ef39d12}{}\label{classWorld_afbde7c41f335e5abdf67935e4ef39d12} 
+\index{World@{World}!add\+Map@{add\+Map}}
+\index{add\+Map@{add\+Map}!World@{World}}
+\subsubsection{\texorpdfstring{add\+Map()}{addMap()}}
+{\footnotesize\ttfamily void World\+::add\+Map (\begin{DoxyParamCaption}\item[{Map\+Ptr}]{m }\end{DoxyParamCaption})}
+
+Adds the game map to world. \hypertarget{classWorld_a6cfa1ac0ab2d191cddb6273119b2e8b6}{}\label{classWorld_a6cfa1ac0ab2d191cddb6273119b2e8b6} 
+\index{World@{World}!add\+Mines@{add\+Mines}}
+\index{add\+Mines@{add\+Mines}!World@{World}}
+\subsubsection{\texorpdfstring{add\+Mines()}{addMines()}}
+{\footnotesize\ttfamily void World\+::add\+Mines (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Mine\+Ptr $>$}]{m }\end{DoxyParamCaption})}
+
+Adds mines to world. \hypertarget{classWorld_a0dabad321c25115c1899d53b0525f1ff}{}\label{classWorld_a0dabad321c25115c1899d53b0525f1ff} 
+\index{World@{World}!add\+Projectile@{add\+Projectile}}
+\index{add\+Projectile@{add\+Projectile}!World@{World}}
+\subsubsection{\texorpdfstring{add\+Projectile()}{addProjectile()}}
+{\footnotesize\ttfamily void World\+::add\+Projectile (\begin{DoxyParamCaption}\item[{Projectile\+Ptr}]{p }\end{DoxyParamCaption})}
+
+Adds a projectile smart pointer to world. \hypertarget{classWorld_a5160225e83eae7837e624ef90d4db29f}{}\label{classWorld_a5160225e83eae7837e624ef90d4db29f} 
+\index{World@{World}!add\+Vehicle@{add\+Vehicle}}
+\index{add\+Vehicle@{add\+Vehicle}!World@{World}}
+\subsubsection{\texorpdfstring{add\+Vehicle()}{addVehicle()}}
+{\footnotesize\ttfamily void World\+::add\+Vehicle (\begin{DoxyParamCaption}\item[{Vehicle\+Ptr}]{v }\end{DoxyParamCaption})}
+
+Adds a vehicle smart pointer to world. \hypertarget{classWorld_a0fa5babafd1bb5749f7f3d664cf996c5}{}\label{classWorld_a0fa5babafd1bb5749f7f3d664cf996c5} 
+\index{World@{World}!add\+Vehicle\+Info@{add\+Vehicle\+Info}}
+\index{add\+Vehicle\+Info@{add\+Vehicle\+Info}!World@{World}}
+\subsubsection{\texorpdfstring{add\+Vehicle\+Info()}{addVehicleInfo()}}
+{\footnotesize\ttfamily void World\+::add\+Vehicle\+Info (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{structVehicleInfo}{Vehicle\+Info} $>$}]{ }\end{DoxyParamCaption})}
+
+Reads vehicle info from maps \hypertarget{classWorld_aee0ecea7671c2b87896ae48e2b8b4db0}{}\label{classWorld_aee0ecea7671c2b87896ae48e2b8b4db0} 
+\index{World@{World}!add\+Wall@{add\+Wall}}
+\index{add\+Wall@{add\+Wall}!World@{World}}
+\subsubsection{\texorpdfstring{add\+Wall()}{addWall()}}
+{\footnotesize\ttfamily void World\+::add\+Wall (\begin{DoxyParamCaption}\item[{Wall\+Ptr}]{w }\end{DoxyParamCaption})}
+
+Adds a wall smart pointer to world. \hypertarget{classWorld_acf70b954c41a9c086d8678da4b95a9a4}{}\label{classWorld_acf70b954c41a9c086d8678da4b95a9a4} 
+\index{World@{World}!draw@{draw}}
+\index{draw@{draw}!World@{World}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void World\+::draw (\begin{DoxyParamCaption}\item[{Window \&}]{w }\end{DoxyParamCaption})}
+
+Draws the game world to a window. \hypertarget{classWorld_a86ec41dd36a293bd86f6ed9070863c19}{}\label{classWorld_a86ec41dd36a293bd86f6ed9070863c19} 
+\index{World@{World}!get\+Check\+Points@{get\+Check\+Points}}
+\index{get\+Check\+Points@{get\+Check\+Points}!World@{World}}
+\subsubsection{\texorpdfstring{get\+Check\+Points()}{getCheckPoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classCheckPoint}{Check\+Point} $>$ $>$ World\+::get\+Check\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+gets the map checkpoints. \hypertarget{classWorld_a976371693de928677ae490df24519696}{}\label{classWorld_a976371693de928677ae490df24519696} 
+\index{World@{World}!get\+Lap\+Total@{get\+Lap\+Total}}
+\index{get\+Lap\+Total@{get\+Lap\+Total}!World@{World}}
+\subsubsection{\texorpdfstring{get\+Lap\+Total()}{getLapTotal()}}
+{\footnotesize\ttfamily int World\+::get\+Lap\+Total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the total amount of laps in the race. \hypertarget{classWorld_a37b996591688a176897dc8157cdbb18d}{}\label{classWorld_a37b996591688a176897dc8157cdbb18d} 
+\index{World@{World}!get\+Map@{get\+Map}}
+\index{get\+Map@{get\+Map}!World@{World}}
+\subsubsection{\texorpdfstring{get\+Map()}{getMap()}}
+{\footnotesize\ttfamily Map\+Ptr World\+::get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the game map \hypertarget{classWorld_a0003fd04b63a37ae393879083f2db673}{}\label{classWorld_a0003fd04b63a37ae393879083f2db673} 
+\index{World@{World}!get\+Mines@{get\+Mines}}
+\index{get\+Mines@{get\+Mines}!World@{World}}
+\subsubsection{\texorpdfstring{get\+Mines()}{getMines()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classMine}{Mine} $>$ $>$ World\+::get\+Mines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets a list of mines from world. \hypertarget{classWorld_a52e57fb3229773869172a71d49b29783}{}\label{classWorld_a52e57fb3229773869172a71d49b29783} 
+\index{World@{World}!get\+Projectiles@{get\+Projectiles}}
+\index{get\+Projectiles@{get\+Projectiles}!World@{World}}
+\subsubsection{\texorpdfstring{get\+Projectiles()}{getProjectiles()}}
+{\footnotesize\ttfamily std\+::vector$<$ Projectile\+Ptr $>$ World\+::get\+Projectiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+A method to get the projectiles inside the world \hypertarget{classWorld_a74d8300035e9495d954e5f6ef90b64b5}{}\label{classWorld_a74d8300035e9495d954e5f6ef90b64b5} 
+\index{World@{World}!get\+Vehicle\+Info@{get\+Vehicle\+Info}}
+\index{get\+Vehicle\+Info@{get\+Vehicle\+Info}!World@{World}}
+\subsubsection{\texorpdfstring{get\+Vehicle\+Info()}{getVehicleInfo()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{structVehicleInfo}{Vehicle\+Info} $>$ World\+::get\+Vehicle\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+A Method to fetch vehicle info from world. \hypertarget{classWorld_afa144f2f17a04087776721af7b225387}{}\label{classWorld_afa144f2f17a04087776721af7b225387} 
+\index{World@{World}!get\+Vehicles@{get\+Vehicles}}
+\index{get\+Vehicles@{get\+Vehicles}!World@{World}}
+\subsubsection{\texorpdfstring{get\+Vehicles()}{getVehicles()}}
+{\footnotesize\ttfamily std\+::vector$<$ Vehicle\+Ptr $>$ World\+::get\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+A method to get the vehicles inside the world \hypertarget{classWorld_a2abd0169432b982782a77914bffd3fa0}{}\label{classWorld_a2abd0169432b982782a77914bffd3fa0} 
+\index{World@{World}!get\+Walls@{get\+Walls}}
+\index{get\+Walls@{get\+Walls}!World@{World}}
+\subsubsection{\texorpdfstring{get\+Walls()}{getWalls()}}
+{\footnotesize\ttfamily std\+::vector$<$ Wall\+Ptr $>$ World\+::get\+Walls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+gets the walls from world. \hypertarget{classWorld_a1958eb9641efaa29bff034f4e076f10a}{}\label{classWorld_a1958eb9641efaa29bff034f4e076f10a} 
+\index{World@{World}!set\+Font@{set\+Font}}
+\index{set\+Font@{set\+Font}!World@{World}}
+\subsubsection{\texorpdfstring{set\+Font()}{setFont()}}
+{\footnotesize\ttfamily void World\+::set\+Font (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ sf\+::\+Font $>$}]{f }\end{DoxyParamCaption})}
+
+Sets a font for world. \hypertarget{classWorld_acc906e59c83bbed0da781ae9e4981d4c}{}\label{classWorld_acc906e59c83bbed0da781ae9e4981d4c} 
+\index{World@{World}!set\+Views@{set\+Views}}
+\index{set\+Views@{set\+Views}!World@{World}}
+\subsubsection{\texorpdfstring{set\+Views()}{setViews()}}
+{\footnotesize\ttfamily std\+::vector$<$ sf\+::\+View $>$ World\+::set\+Views (\begin{DoxyParamCaption}\item[{Window \&}]{w }\end{DoxyParamCaption}) const}
+
+Sets the split-\/screen view necessary for 2-\/player play and returns a list of the views. \hypertarget{classWorld_aea52953b00dfbea7766176454206b007}{}\label{classWorld_aea52953b00dfbea7766176454206b007} 
+\index{World@{World}!update\+State@{update\+State}}
+\index{update\+State@{update\+State}!World@{World}}
+\subsubsection{\texorpdfstring{update\+State()}{updateState()}}
+{\footnotesize\ttfamily void World\+::update\+State (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Updates the game state. This includes both the game physics as well as player input. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/world.\+hpp\item 
+src/world.\+cpp\end{DoxyCompactItemize}

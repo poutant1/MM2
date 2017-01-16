@@ -1,0 +1,83 @@
+\hypertarget{classCheckPoint}{}\section{Check\+Point Class Reference}
+\label{classCheckPoint}\index{Check\+Point@{Check\+Point}}
+
+
+{\ttfamily \#include $<$checkpoint.\+hpp$>$}
+
+Inheritance diagram for Check\+Point\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCheckPoint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCheckPoint_a78e714da90f33a69c0413a2f51a988ad}{Check\+Point} ()
+\item 
+\hyperlink{classCheckPoint_a17653df57b3208932c20fceecf29e7a1}{Check\+Point} (Vector2d pos, int num, int width, int \hyperlink{classObject_aa08efab6c2c6898b1d0d7103076d8674}{angle})
+\item 
+void \hyperlink{classCheckPoint_abb225b6849ff500b0fe19cdeb927d1b6}{collide} (\hyperlink{classObject}{Object} \&o)
+\item 
+int \hyperlink{classCheckPoint_a6d0ba1960662239fe108211f3787ca12}{get\+Width} () const
+\item 
+int \hyperlink{classCheckPoint_a5356134c7455dac27e72dd144642e8ec}{get\+Height} () const
+\item 
+int \hyperlink{classCheckPoint_a22dca0111d35b2182b825ea6f03f94ed}{get\+Number} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class to follow player\textquotesingle{}s progress in game. Check\+Point-\/object is located in the game area to work as an indicator, whether player has passed a certain point. A integer numbers are set for checkpoints to determint orde in which they have to be visited. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCheckPoint_a78e714da90f33a69c0413a2f51a988ad}{}\label{classCheckPoint_a78e714da90f33a69c0413a2f51a988ad} 
+\index{Check\+Point@{Check\+Point}!Check\+Point@{Check\+Point}}
+\index{Check\+Point@{Check\+Point}!Check\+Point@{Check\+Point}}
+\subsubsection{\texorpdfstring{Check\+Point()}{CheckPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Check\+Point\+::\+Check\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor \hypertarget{classCheckPoint_a17653df57b3208932c20fceecf29e7a1}{}\label{classCheckPoint_a17653df57b3208932c20fceecf29e7a1} 
+\index{Check\+Point@{Check\+Point}!Check\+Point@{Check\+Point}}
+\index{Check\+Point@{Check\+Point}!Check\+Point@{Check\+Point}}
+\subsubsection{\texorpdfstring{Check\+Point()}{CheckPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Check\+Point\+::\+Check\+Point (\begin{DoxyParamCaption}\item[{Vector2d}]{pos,  }\item[{int}]{num,  }\item[{int}]{width,  }\item[{int}]{angle }\end{DoxyParamCaption})}
+
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCheckPoint_abb225b6849ff500b0fe19cdeb927d1b6}{}\label{classCheckPoint_abb225b6849ff500b0fe19cdeb927d1b6} 
+\index{Check\+Point@{Check\+Point}!collide@{collide}}
+\index{collide@{collide}!Check\+Point@{Check\+Point}}
+\subsubsection{\texorpdfstring{collide()}{collide()}}
+{\footnotesize\ttfamily void Check\+Point\+::collide (\begin{DoxyParamCaption}\item[{\hyperlink{classObject}{Object} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the order number of checkpoint. Detects if player has passed the checkpoint. 
+
+Implements \hyperlink{classObject}{Object}.
+
+\hypertarget{classCheckPoint_a5356134c7455dac27e72dd144642e8ec}{}\label{classCheckPoint_a5356134c7455dac27e72dd144642e8ec} 
+\index{Check\+Point@{Check\+Point}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Check\+Point@{Check\+Point}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int Check\+Point\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns height of checkpoint. \hypertarget{classCheckPoint_a22dca0111d35b2182b825ea6f03f94ed}{}\label{classCheckPoint_a22dca0111d35b2182b825ea6f03f94ed} 
+\index{Check\+Point@{Check\+Point}!get\+Number@{get\+Number}}
+\index{get\+Number@{get\+Number}!Check\+Point@{Check\+Point}}
+\subsubsection{\texorpdfstring{get\+Number()}{getNumber()}}
+{\footnotesize\ttfamily int Check\+Point\+::get\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns number of checkpoint. \hypertarget{classCheckPoint_a6d0ba1960662239fe108211f3787ca12}{}\label{classCheckPoint_a6d0ba1960662239fe108211f3787ca12} 
+\index{Check\+Point@{Check\+Point}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Check\+Point@{Check\+Point}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int Check\+Point\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns width of checkpoint. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/checkpoint.\+hpp\item 
+src/checkpoint.\+cpp\end{DoxyCompactItemize}

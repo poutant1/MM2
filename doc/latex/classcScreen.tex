@@ -1,0 +1,65 @@
+\hypertarget{classcScreen}{}\section{c\+Screen Class Reference}
+\label{classcScreen}\index{c\+Screen@{c\+Screen}}
+
+
+{\ttfamily \#include $<$c\+Screen.\+hpp$>$}
+
+Inheritance diagram for c\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcScreen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcScreen_abb06ae98ccb31bc0fd2174547a10ca0d}{c\+Screen} (std\+::shared\+\_\+ptr$<$ \hyperlink{classGameInfo}{Game\+Info} $>$ info)
+\item 
+virtual int \hyperlink{classcScreen_a4b4057ffec7ab1492a4de19f9994cac4}{Run} (sf\+::\+Render\+Window \&w)=0
+\item 
+void \hyperlink{classcScreen_aa741f84e247decd04cb714bc1c33f93d}{set\+\_\+infoptr} (std\+::shared\+\_\+ptr$<$ \hyperlink{classGameInfo}{Game\+Info} $>$ info)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classGameInfo}{Game\+Info} $>$ \hyperlink{classcScreen_a7fea97aa92e8d84dafd9119e9b2545d4}{get\+\_\+infoptr} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A generic class for different scenes or screens inside the game. These include the main menu, the actual game and the end screen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcScreen_abb06ae98ccb31bc0fd2174547a10ca0d}{}\label{classcScreen_abb06ae98ccb31bc0fd2174547a10ca0d} 
+\index{c\+Screen@{c\+Screen}!c\+Screen@{c\+Screen}}
+\index{c\+Screen@{c\+Screen}!c\+Screen@{c\+Screen}}
+\subsubsection{\texorpdfstring{c\+Screen()}{cScreen()}}
+{\footnotesize\ttfamily c\+Screen\+::c\+Screen (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classGameInfo}{Game\+Info} $>$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constuctor for the \hyperlink{classcScreen}{c\+Screen} class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcScreen_a7fea97aa92e8d84dafd9119e9b2545d4}{}\label{classcScreen_a7fea97aa92e8d84dafd9119e9b2545d4} 
+\index{c\+Screen@{c\+Screen}!get\+\_\+infoptr@{get\+\_\+infoptr}}
+\index{get\+\_\+infoptr@{get\+\_\+infoptr}!c\+Screen@{c\+Screen}}
+\subsubsection{\texorpdfstring{get\+\_\+infoptr()}{get\_infoptr()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classGameInfo}{Game\+Info}$>$ c\+Screen\+::get\+\_\+infoptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the shared information class used by the screen. \hypertarget{classcScreen_a4b4057ffec7ab1492a4de19f9994cac4}{}\label{classcScreen_a4b4057ffec7ab1492a4de19f9994cac4} 
+\index{c\+Screen@{c\+Screen}!Run@{Run}}
+\index{Run@{Run}!c\+Screen@{c\+Screen}}
+\subsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily virtual int c\+Screen\+::\+Run (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+A function to run the scene. The actual gameplay or a menu is completely contained inside this function. 
+
+Implemented in \hyperlink{classScreenMenu_a86af8a6c97bf315bbe88cd2d7ab35abf}{Screen\+Menu}, \hyperlink{classScreenEnd_a3582fcab70f5568fcdc187feeb1383ad}{Screen\+End}, and \hyperlink{classScreenInGame_a55d4f45872f6d488145d1cf71819b960}{Screen\+In\+Game}.
+
+\hypertarget{classcScreen_aa741f84e247decd04cb714bc1c33f93d}{}\label{classcScreen_aa741f84e247decd04cb714bc1c33f93d} 
+\index{c\+Screen@{c\+Screen}!set\+\_\+infoptr@{set\+\_\+infoptr}}
+\index{set\+\_\+infoptr@{set\+\_\+infoptr}!c\+Screen@{c\+Screen}}
+\subsubsection{\texorpdfstring{set\+\_\+infoptr()}{set\_infoptr()}}
+{\footnotesize\ttfamily void c\+Screen\+::set\+\_\+infoptr (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classGameInfo}{Game\+Info} $>$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the shared information class to be used between different screens for the screen. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/c\+Screen.\+hpp\end{DoxyCompactItemize}

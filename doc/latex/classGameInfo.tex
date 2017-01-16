@@ -1,0 +1,95 @@
+\hypertarget{classGameInfo}{}\section{Game\+Info Class Reference}
+\label{classGameInfo}\index{Game\+Info@{Game\+Info}}
+
+
+{\ttfamily \#include $<$gameinfo.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGameInfo_ae7ded63bd69b007847bd66debaeebc23}{Game\+Info} ()
+\item 
+void \hyperlink{classGameInfo_a4269ef3313bbf20946f47bbd1c272b6d}{set\+\_\+map\+\_\+path} (std\+::string path)
+\item 
+std\+::string \hyperlink{classGameInfo_aa9c66670430c8ce52125cea87b6c38a5}{get\+\_\+map\+\_\+path} ()
+\item 
+void \hyperlink{classGameInfo_aedb1dce53ebf765683a71d57b65c6cef}{set\+\_\+tilemap\+\_\+path} (std\+::string tpath)
+\item 
+std\+::string \hyperlink{classGameInfo_a4a3618e3691078217e3bec548bcf40cc}{get\+\_\+tilemap\+\_\+path} ()
+\item 
+void \hyperlink{classGameInfo_a1c348163ac323c617b0306f946d17baa}{set\+\_\+lap\+\_\+total} (int number)
+\item 
+int \hyperlink{classGameInfo_ab8f5a3a0d1aa460ed0956f211bbc445c}{get\+\_\+lap\+\_\+total} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classPlayerInput}{Player\+Input} $>$ \hyperlink{classGameInfo_a4c6bf794f57e952748633c7897d4741d}{get\+Player\+Input} (int p)
+\item 
+void \hyperlink{classGameInfo_ae4d8a51be4f8d55b177e2fdadb5e4860}{set\+Player\+Input} (\hyperlink{classPlayerInput}{Player\+Input} const \&p, int player)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for storing user-\/defined game settings that is useful to all game screens. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGameInfo_ae7ded63bd69b007847bd66debaeebc23}{}\label{classGameInfo_ae7ded63bd69b007847bd66debaeebc23} 
+\index{Game\+Info@{Game\+Info}!Game\+Info@{Game\+Info}}
+\index{Game\+Info@{Game\+Info}!Game\+Info@{Game\+Info}}
+\subsubsection{\texorpdfstring{Game\+Info()}{GameInfo()}}
+{\footnotesize\ttfamily Game\+Info\+::\+Game\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGameInfo_ab8f5a3a0d1aa460ed0956f211bbc445c}{}\label{classGameInfo_ab8f5a3a0d1aa460ed0956f211bbc445c} 
+\index{Game\+Info@{Game\+Info}!get\+\_\+lap\+\_\+total@{get\+\_\+lap\+\_\+total}}
+\index{get\+\_\+lap\+\_\+total@{get\+\_\+lap\+\_\+total}!Game\+Info@{Game\+Info}}
+\subsubsection{\texorpdfstring{get\+\_\+lap\+\_\+total()}{get\_lap\_total()}}
+{\footnotesize\ttfamily int Game\+Info\+::get\+\_\+lap\+\_\+total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the amount of laps in a race. \hypertarget{classGameInfo_aa9c66670430c8ce52125cea87b6c38a5}{}\label{classGameInfo_aa9c66670430c8ce52125cea87b6c38a5} 
+\index{Game\+Info@{Game\+Info}!get\+\_\+map\+\_\+path@{get\+\_\+map\+\_\+path}}
+\index{get\+\_\+map\+\_\+path@{get\+\_\+map\+\_\+path}!Game\+Info@{Game\+Info}}
+\subsubsection{\texorpdfstring{get\+\_\+map\+\_\+path()}{get\_map\_path()}}
+{\footnotesize\ttfamily std\+::string Game\+Info\+::get\+\_\+map\+\_\+path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current path for mapfile for map generation. \hypertarget{classGameInfo_a4a3618e3691078217e3bec548bcf40cc}{}\label{classGameInfo_a4a3618e3691078217e3bec548bcf40cc} 
+\index{Game\+Info@{Game\+Info}!get\+\_\+tilemap\+\_\+path@{get\+\_\+tilemap\+\_\+path}}
+\index{get\+\_\+tilemap\+\_\+path@{get\+\_\+tilemap\+\_\+path}!Game\+Info@{Game\+Info}}
+\subsubsection{\texorpdfstring{get\+\_\+tilemap\+\_\+path()}{get\_tilemap\_path()}}
+{\footnotesize\ttfamily std\+::string Game\+Info\+::get\+\_\+tilemap\+\_\+path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current path for tilemap-\/file for map generation. \hypertarget{classGameInfo_a4c6bf794f57e952748633c7897d4741d}{}\label{classGameInfo_a4c6bf794f57e952748633c7897d4741d} 
+\index{Game\+Info@{Game\+Info}!get\+Player\+Input@{get\+Player\+Input}}
+\index{get\+Player\+Input@{get\+Player\+Input}!Game\+Info@{Game\+Info}}
+\subsubsection{\texorpdfstring{get\+Player\+Input()}{getPlayerInput()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classPlayerInput}{Player\+Input}$>$ Game\+Info\+::get\+Player\+Input (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns Player\+Input-\/object pointer for game controls of player \hypertarget{classGameInfo_a1c348163ac323c617b0306f946d17baa}{}\label{classGameInfo_a1c348163ac323c617b0306f946d17baa} 
+\index{Game\+Info@{Game\+Info}!set\+\_\+lap\+\_\+total@{set\+\_\+lap\+\_\+total}}
+\index{set\+\_\+lap\+\_\+total@{set\+\_\+lap\+\_\+total}!Game\+Info@{Game\+Info}}
+\subsubsection{\texorpdfstring{set\+\_\+lap\+\_\+total()}{set\_lap\_total()}}
+{\footnotesize\ttfamily void Game\+Info\+::set\+\_\+lap\+\_\+total (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setting the amount of laps in a race. \hypertarget{classGameInfo_a4269ef3313bbf20946f47bbd1c272b6d}{}\label{classGameInfo_a4269ef3313bbf20946f47bbd1c272b6d} 
+\index{Game\+Info@{Game\+Info}!set\+\_\+map\+\_\+path@{set\+\_\+map\+\_\+path}}
+\index{set\+\_\+map\+\_\+path@{set\+\_\+map\+\_\+path}!Game\+Info@{Game\+Info}}
+\subsubsection{\texorpdfstring{set\+\_\+map\+\_\+path()}{set\_map\_path()}}
+{\footnotesize\ttfamily void Game\+Info\+::set\+\_\+map\+\_\+path (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setting path of mapfile for map generation. \hypertarget{classGameInfo_aedb1dce53ebf765683a71d57b65c6cef}{}\label{classGameInfo_aedb1dce53ebf765683a71d57b65c6cef} 
+\index{Game\+Info@{Game\+Info}!set\+\_\+tilemap\+\_\+path@{set\+\_\+tilemap\+\_\+path}}
+\index{set\+\_\+tilemap\+\_\+path@{set\+\_\+tilemap\+\_\+path}!Game\+Info@{Game\+Info}}
+\subsubsection{\texorpdfstring{set\+\_\+tilemap\+\_\+path()}{set\_tilemap\_path()}}
+{\footnotesize\ttfamily void Game\+Info\+::set\+\_\+tilemap\+\_\+path (\begin{DoxyParamCaption}\item[{std\+::string}]{tpath }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setting path for tilemap-\/file for map generation. \hypertarget{classGameInfo_ae4d8a51be4f8d55b177e2fdadb5e4860}{}\label{classGameInfo_ae4d8a51be4f8d55b177e2fdadb5e4860} 
+\index{Game\+Info@{Game\+Info}!set\+Player\+Input@{set\+Player\+Input}}
+\index{set\+Player\+Input@{set\+Player\+Input}!Game\+Info@{Game\+Info}}
+\subsubsection{\texorpdfstring{set\+Player\+Input()}{setPlayerInput()}}
+{\footnotesize\ttfamily void Game\+Info\+::set\+Player\+Input (\begin{DoxyParamCaption}\item[{\hyperlink{classPlayerInput}{Player\+Input} const \&}]{p,  }\item[{int}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets controls for player through Player\+Input-\/object. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gameinfo.\+hpp\end{DoxyCompactItemize}

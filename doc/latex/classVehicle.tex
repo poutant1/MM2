@@ -1,0 +1,79 @@
+\hypertarget{classVehicle}{}\section{Vehicle Class Reference}
+\label{classVehicle}\index{Vehicle@{Vehicle}}
+
+
+{\ttfamily \#include $<$vehicle.\+hpp$>$}
+
+Inheritance diagram for Vehicle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classVehicle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVehicle_a60b696997b412b5dd48728bbc3f56dce}{Vehicle} (Vector2d pos, double orientation\+Angle, double max\+Sp, double maxF, double m, std\+::shared\+\_\+ptr$<$ \hyperlink{classPlayerInput}{Player\+Input} $>$ p1, std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$ w)
+\item 
+void \hyperlink{classVehicle_af1ea3f326eb5ca27e1a06f4fe81832ce}{update\+State} (double dt)
+\item 
+virtual void \hyperlink{classVehicle_ab1fbef5c7898343380c1d9aaab11c64a}{set\+Texture} (std\+::string path)
+\item 
+void \hyperlink{classVehicle_adfc1996e318be79103e6d34eb60da656}{set\+Ammo\+Texture} (std\+::string path)
+\item 
+void \hyperlink{classVehicle_a54a02d80bb7693b7e9e2b00bd1ef3217}{shoot} (std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$ world)
+\item 
+int \hyperlink{classVehicle_aa3ec0152e6944dcd9e3b219dbf4fbba5}{get\+Lap} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class for containing the vehicles in the game. A vehicle is derived from the object class, and therefore has the physical properties that an object has. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classVehicle_a60b696997b412b5dd48728bbc3f56dce}{}\label{classVehicle_a60b696997b412b5dd48728bbc3f56dce} 
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\subsubsection{\texorpdfstring{Vehicle()}{Vehicle()}}
+{\footnotesize\ttfamily Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{Vector2d}]{pos,  }\item[{double}]{orientation\+Angle,  }\item[{double}]{max\+Sp,  }\item[{double}]{maxF,  }\item[{double}]{m,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classPlayerInput}{Player\+Input} $>$}]{p1,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$}]{w }\end{DoxyParamCaption})}
+
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classVehicle_aa3ec0152e6944dcd9e3b219dbf4fbba5}{}\label{classVehicle_aa3ec0152e6944dcd9e3b219dbf4fbba5} 
+\index{Vehicle@{Vehicle}!get\+Lap@{get\+Lap}}
+\index{get\+Lap@{get\+Lap}!Vehicle@{Vehicle}}
+\subsubsection{\texorpdfstring{get\+Lap()}{getLap()}}
+{\footnotesize\ttfamily int Vehicle\+::get\+Lap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the lap the vehicle is currently on. \hypertarget{classVehicle_adfc1996e318be79103e6d34eb60da656}{}\label{classVehicle_adfc1996e318be79103e6d34eb60da656} 
+\index{Vehicle@{Vehicle}!set\+Ammo\+Texture@{set\+Ammo\+Texture}}
+\index{set\+Ammo\+Texture@{set\+Ammo\+Texture}!Vehicle@{Vehicle}}
+\subsubsection{\texorpdfstring{set\+Ammo\+Texture()}{setAmmoTexture()}}
+{\footnotesize\ttfamily void Vehicle\+::set\+Ammo\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+Sets a texture for the ammo type the vehicle uses. \hypertarget{classVehicle_ab1fbef5c7898343380c1d9aaab11c64a}{}\label{classVehicle_ab1fbef5c7898343380c1d9aaab11c64a} 
+\index{Vehicle@{Vehicle}!set\+Texture@{set\+Texture}}
+\index{set\+Texture@{set\+Texture}!Vehicle@{Vehicle}}
+\subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}
+{\footnotesize\ttfamily void Vehicle\+::set\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the texture for the vehicle. \hypertarget{classVehicle_a54a02d80bb7693b7e9e2b00bd1ef3217}{}\label{classVehicle_a54a02d80bb7693b7e9e2b00bd1ef3217} 
+\index{Vehicle@{Vehicle}!shoot@{shoot}}
+\index{shoot@{shoot}!Vehicle@{Vehicle}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Vehicle\+::shoot (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$}]{world }\end{DoxyParamCaption})}
+
+This function handles the shooting of a projectile. \hypertarget{classVehicle_af1ea3f326eb5ca27e1a06f4fe81832ce}{}\label{classVehicle_af1ea3f326eb5ca27e1a06f4fe81832ce} 
+\index{Vehicle@{Vehicle}!update\+State@{update\+State}}
+\index{update\+State@{update\+State}!Vehicle@{Vehicle}}
+\subsubsection{\texorpdfstring{update\+State()}{updateState()}}
+{\footnotesize\ttfamily void Vehicle\+::update\+State (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Updates the state of the vehicle. This includes both the physics as well as the input for the vehicle. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/vehicle.\+hpp\item 
+src/vehicle.\+cpp\end{DoxyCompactItemize}

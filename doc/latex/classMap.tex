@@ -1,0 +1,112 @@
+\hypertarget{classMap}{}\section{Map Class Reference}
+\label{classMap}\index{Map@{Map}}
+
+
+{\ttfamily \#include $<$map.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMap_a067a9c057cdf715cbe1484efad9bff27}{Map} (const char $\ast$filename, std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$)
+\item 
+void \hyperlink{classMap_accb446c23d408f95e6944fedc742b79f}{set\+Tileset\+Path} (std\+::string const \&s)
+\item 
+bool \hyperlink{classMap_ae184e30853864425b327b2d5b3cba48b}{load\+Tile\+Map} ()
+\item 
+void \hyperlink{classMap_a122f46ddff5b5d0b8377425a9a176502}{create\+Walls} (std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$ w)
+\item 
+\hyperlink{classTilemap}{Tilemap} \& \hyperlink{classMap_ae1ab0f7883bad946493c6a7f896966f0}{get\+Tilemap} ()
+\item 
+void \hyperlink{classMap_aa1621a8865fc469ae9c05c08967e4f2c}{draw} (Window \&w)
+\item 
+int \hyperlink{classMap_a2b09c8875af2efb711fc3a022e70427d}{get\+Height} ()
+\item 
+int \hyperlink{classMap_afd34d12227676b3cebeed9f5fae2508f}{get\+Width} ()
+\item 
+sf\+::\+Vector2u \hyperlink{classMap_a97717641214ebe1e105b4afcf412fbb3}{get\+Tile\+Size} ()
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classCheckPoint}{Check\+Point} $>$ $>$ \hyperlink{classMap_a5de4ef4f3422d815f28d8e609964a449}{get\+Check\+Points} ()
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classMine}{Mine} $>$ $>$ \hyperlink{classMap_a5c116280551e3b49145e7d30d392c429}{get\+Mines} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Map-\/class reads game field from a text file in its constructor. Text file consists of characters representing tiles. The text file is assumed to have equally many characters in every row and it ends in newline-\/character 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMap_a067a9c057cdf715cbe1484efad9bff27}{}\label{classMap_a067a9c057cdf715cbe1484efad9bff27} 
+\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\subsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily Map\+::\+Map (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$}]{w }\end{DoxyParamCaption})}
+
+Constructor for map. Loads the map from a map file. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMap_a122f46ddff5b5d0b8377425a9a176502}{}\label{classMap_a122f46ddff5b5d0b8377425a9a176502} 
+\index{Map@{Map}!create\+Walls@{create\+Walls}}
+\index{create\+Walls@{create\+Walls}!Map@{Map}}
+\subsubsection{\texorpdfstring{create\+Walls()}{createWalls()}}
+{\footnotesize\ttfamily void Map\+::create\+Walls (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classWorld}{World} $>$}]{w }\end{DoxyParamCaption})}
+
+Creates walls according to map structure. \hypertarget{classMap_aa1621a8865fc469ae9c05c08967e4f2c}{}\label{classMap_aa1621a8865fc469ae9c05c08967e4f2c} 
+\index{Map@{Map}!draw@{draw}}
+\index{draw@{draw}!Map@{Map}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Map\+::draw (\begin{DoxyParamCaption}\item[{Window \&}]{w }\end{DoxyParamCaption})}
+
+Draws the tilemap. \hypertarget{classMap_a5de4ef4f3422d815f28d8e609964a449}{}\label{classMap_a5de4ef4f3422d815f28d8e609964a449} 
+\index{Map@{Map}!get\+Check\+Points@{get\+Check\+Points}}
+\index{get\+Check\+Points@{get\+Check\+Points}!Map@{Map}}
+\subsubsection{\texorpdfstring{get\+Check\+Points()}{getCheckPoints()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\hyperlink{classCheckPoint}{Check\+Point}$>$ $>$ Map\+::get\+Check\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the checkpoints as a vector. \hypertarget{classMap_a2b09c8875af2efb711fc3a022e70427d}{}\label{classMap_a2b09c8875af2efb711fc3a022e70427d} 
+\index{Map@{Map}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Map@{Map}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int Map\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the height of the map. \hypertarget{classMap_a5c116280551e3b49145e7d30d392c429}{}\label{classMap_a5c116280551e3b49145e7d30d392c429} 
+\index{Map@{Map}!get\+Mines@{get\+Mines}}
+\index{get\+Mines@{get\+Mines}!Map@{Map}}
+\subsubsection{\texorpdfstring{get\+Mines()}{getMines()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\hyperlink{classMine}{Mine}$>$ $>$ Map\+::get\+Mines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the mines of the map as a list \hypertarget{classMap_ae1ab0f7883bad946493c6a7f896966f0}{}\label{classMap_ae1ab0f7883bad946493c6a7f896966f0} 
+\index{Map@{Map}!get\+Tilemap@{get\+Tilemap}}
+\index{get\+Tilemap@{get\+Tilemap}!Map@{Map}}
+\subsubsection{\texorpdfstring{get\+Tilemap()}{getTilemap()}}
+{\footnotesize\ttfamily \hyperlink{classTilemap}{Tilemap}\& Map\+::get\+Tilemap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the tilemap structure. \hypertarget{classMap_a97717641214ebe1e105b4afcf412fbb3}{}\label{classMap_a97717641214ebe1e105b4afcf412fbb3} 
+\index{Map@{Map}!get\+Tile\+Size@{get\+Tile\+Size}}
+\index{get\+Tile\+Size@{get\+Tile\+Size}!Map@{Map}}
+\subsubsection{\texorpdfstring{get\+Tile\+Size()}{getTileSize()}}
+{\footnotesize\ttfamily sf\+::\+Vector2u Map\+::get\+Tile\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the tile size as a vector. \hypertarget{classMap_afd34d12227676b3cebeed9f5fae2508f}{}\label{classMap_afd34d12227676b3cebeed9f5fae2508f} 
+\index{Map@{Map}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Map@{Map}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int Map\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the idth of the map. \hypertarget{classMap_ae184e30853864425b327b2d5b3cba48b}{}\label{classMap_ae184e30853864425b327b2d5b3cba48b} 
+\index{Map@{Map}!load\+Tile\+Map@{load\+Tile\+Map}}
+\index{load\+Tile\+Map@{load\+Tile\+Map}!Map@{Map}}
+\subsubsection{\texorpdfstring{load\+Tile\+Map()}{loadTileMap()}}
+{\footnotesize\ttfamily bool Map\+::load\+Tile\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Loads the tilemap according to the map structure and tileset. \hypertarget{classMap_accb446c23d408f95e6944fedc742b79f}{}\label{classMap_accb446c23d408f95e6944fedc742b79f} 
+\index{Map@{Map}!set\+Tileset\+Path@{set\+Tileset\+Path}}
+\index{set\+Tileset\+Path@{set\+Tileset\+Path}!Map@{Map}}
+\subsubsection{\texorpdfstring{set\+Tileset\+Path()}{setTilesetPath()}}
+{\footnotesize\ttfamily void Map\+::set\+Tileset\+Path (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the path for the tileset path to be used. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/map.\+hpp\item 
+src/map.\+cpp\end{DoxyCompactItemize}

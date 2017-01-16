@@ -1,0 +1,219 @@
+\hypertarget{classObject}{}\section{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+
+
+{\ttfamily \#include $<$object.\+hpp$>$}
+
+Inheritance diagram for Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const Vector2d \& \hyperlink{classObject_ab498ce65ce8cb69bb806081e65f19cd6}{get\+Position} () const
+\item 
+void \hyperlink{classObject_a03d47d414e9638846de79b4f15cda00f}{set\+Position} (Vector2d const \&p)
+\item 
+const Vector2d \& \hyperlink{classObject_a0c3105820f784f07a6d20e019a8311a6}{get\+Speed} () const
+\item 
+void \hyperlink{classObject_a34421c57b89f3c9c6e0de44c98469585}{set\+Speed} (Vector2d const \&s)
+\item 
+virtual void \hyperlink{classObject_a3b23ad400ac8a7133fb470daa4e67467}{set\+Texture} (sf\+::\+Texture \&)
+\item 
+double \hyperlink{classObject_ac53341c11f7435033434bc3b6c908f0c}{get\+Mass} () const
+\item 
+void \hyperlink{classObject_a07221bb6a7c823b993005f8a0d3cd7a1}{set\+Mass} (double const \&m)
+\item 
+double \hyperlink{classObject_a9958ed5111be9373ef97cb20d00b625f}{get\+Angle} () const
+\item 
+void \hyperlink{classObject_a7e69ebba88f99341baf4d046be6493f1}{set\+Angle} (double const \&a)
+\item 
+sf\+::\+Sprite \hyperlink{classObject_add7c5a02624a3dbdf856517b18fce61f}{get\+Sprite} () const
+\item 
+void \hyperlink{classObject_a4da149ed27dfef04d62cb2fa6315af1c}{draw} (Window \&w)
+\item 
+double \hyperlink{classObject_a3d76eb87b30cfd6c9812a2d85a26b187}{get\+Radius} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classObject_a4651b3e887145345efc01e98bb9e7b15}{collides} (\hyperlink{classObject}{Object} const \&o) const
+\item 
+bool \hyperlink{classObject_a9f3dd05fa465ed26bcb89a92dd25190c}{collides} (\hyperlink{classWall}{Wall} const \&w) const
+\item 
+bool \hyperlink{classObject_a6e41ad759709da8f973419a57c5e7a1c}{collides} (\hyperlink{classCheckPoint}{Check\+Point} const \&cp) const
+\item 
+\hypertarget{classObject_a026ddef458c358eef33f631c4db42172}{}\label{classObject_a026ddef458c358eef33f631c4db42172} 
+virtual void {\bfseries collide} (\hyperlink{classObject}{Object} \&o)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector2d \hyperlink{classObject_ab77f145878370ab7b92f067432dc375c}{position}
+\item 
+Vector2d \hyperlink{classObject_a740762c9fe723eda94fe82862a8fa200}{speed}
+\item 
+double \hyperlink{classObject_aa08efab6c2c6898b1d0d7103076d8674}{angle}
+\item 
+double \hyperlink{classObject_abbd565f533683168a39d703f3b5c6bae}{mass}
+\item 
+double \hyperlink{classObject_aacfbf5151daad699c60efc27fb702406}{radius}
+\item 
+sf\+::\+Sprite \hyperlink{classObject_a65be09abc56e93e0154c3a0e37f97579}{sprite}
+\item 
+sf\+::\+Texture \hyperlink{classObject_a8abc6192982ee39b2dc9d9b05cc155ee}{texture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic class for game objects, such players, checkpoints and projectiles. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classObject_a4651b3e887145345efc01e98bb9e7b15}{}\label{classObject_a4651b3e887145345efc01e98bb9e7b15} 
+\index{Object@{Object}!collides@{collides}}
+\index{collides@{collides}!Object@{Object}}
+\subsubsection{\texorpdfstring{collides()}{collides()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Object\+::collides (\begin{DoxyParamCaption}\item[{\hyperlink{classObject}{Object} const \&}]{o }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if an object collides with another object. \hypertarget{classObject_a9f3dd05fa465ed26bcb89a92dd25190c}{}\label{classObject_a9f3dd05fa465ed26bcb89a92dd25190c} 
+\index{Object@{Object}!collides@{collides}}
+\index{collides@{collides}!Object@{Object}}
+\subsubsection{\texorpdfstring{collides()}{collides()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Object\+::collides (\begin{DoxyParamCaption}\item[{\hyperlink{classWall}{Wall} const \&}]{w }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if an object collides with a wall. \hypertarget{classObject_a6e41ad759709da8f973419a57c5e7a1c}{}\label{classObject_a6e41ad759709da8f973419a57c5e7a1c} 
+\index{Object@{Object}!collides@{collides}}
+\index{collides@{collides}!Object@{Object}}
+\subsubsection{\texorpdfstring{collides()}{collides()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Object\+::collides (\begin{DoxyParamCaption}\item[{\hyperlink{classCheckPoint}{Check\+Point} const \&}]{cp }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+checks if an object collides with a map checkpoint. \hypertarget{classObject_a4da149ed27dfef04d62cb2fa6315af1c}{}\label{classObject_a4da149ed27dfef04d62cb2fa6315af1c} 
+\index{Object@{Object}!draw@{draw}}
+\index{draw@{draw}!Object@{Object}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Object\+::draw (\begin{DoxyParamCaption}\item[{Window \&}]{w }\end{DoxyParamCaption})}
+
+Draws an object on a window. \hypertarget{classObject_a9958ed5111be9373ef97cb20d00b625f}{}\label{classObject_a9958ed5111be9373ef97cb20d00b625f} 
+\index{Object@{Object}!get\+Angle@{get\+Angle}}
+\index{get\+Angle@{get\+Angle}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Angle()}{getAngle()}}
+{\footnotesize\ttfamily double Object\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the angle of an object in degrees. \hypertarget{classObject_ac53341c11f7435033434bc3b6c908f0c}{}\label{classObject_ac53341c11f7435033434bc3b6c908f0c} 
+\index{Object@{Object}!get\+Mass@{get\+Mass}}
+\index{get\+Mass@{get\+Mass}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Mass()}{getMass()}}
+{\footnotesize\ttfamily double Object\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the mass of an object. \hypertarget{classObject_ab498ce65ce8cb69bb806081e65f19cd6}{}\label{classObject_ab498ce65ce8cb69bb806081e65f19cd6} 
+\index{Object@{Object}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily const Vector2d \& Object\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the objects position in pixels as a 2d vector. \hypertarget{classObject_a3d76eb87b30cfd6c9812a2d85a26b187}{}\label{classObject_a3d76eb87b30cfd6c9812a2d85a26b187} 
+\index{Object@{Object}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Radius()}{getRadius()}}
+{\footnotesize\ttfamily double Object\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the radius of an object. \hypertarget{classObject_a0c3105820f784f07a6d20e019a8311a6}{}\label{classObject_a0c3105820f784f07a6d20e019a8311a6} 
+\index{Object@{Object}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Speed()}{getSpeed()}}
+{\footnotesize\ttfamily const Vector2d \& Object\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the speed of an object. \hypertarget{classObject_add7c5a02624a3dbdf856517b18fce61f}{}\label{classObject_add7c5a02624a3dbdf856517b18fce61f} 
+\index{Object@{Object}!get\+Sprite@{get\+Sprite}}
+\index{get\+Sprite@{get\+Sprite}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Sprite()}{getSprite()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Object\+::get\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the sprite of an object. \hypertarget{classObject_a7e69ebba88f99341baf4d046be6493f1}{}\label{classObject_a7e69ebba88f99341baf4d046be6493f1} 
+\index{Object@{Object}!set\+Angle@{set\+Angle}}
+\index{set\+Angle@{set\+Angle}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Angle()}{setAngle()}}
+{\footnotesize\ttfamily void Object\+::set\+Angle (\begin{DoxyParamCaption}\item[{double const \&}]{a }\end{DoxyParamCaption})}
+
+Sets the angle of an object in degrees. \hypertarget{classObject_a07221bb6a7c823b993005f8a0d3cd7a1}{}\label{classObject_a07221bb6a7c823b993005f8a0d3cd7a1} 
+\index{Object@{Object}!set\+Mass@{set\+Mass}}
+\index{set\+Mass@{set\+Mass}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Mass()}{setMass()}}
+{\footnotesize\ttfamily void Object\+::set\+Mass (\begin{DoxyParamCaption}\item[{double const \&}]{m }\end{DoxyParamCaption})}
+
+Sets the mass of an object. \hypertarget{classObject_a03d47d414e9638846de79b4f15cda00f}{}\label{classObject_a03d47d414e9638846de79b4f15cda00f} 
+\index{Object@{Object}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void Object\+::set\+Position (\begin{DoxyParamCaption}\item[{Vector2d const \&}]{p }\end{DoxyParamCaption})}
+
+Sets the position of an object. \hypertarget{classObject_a34421c57b89f3c9c6e0de44c98469585}{}\label{classObject_a34421c57b89f3c9c6e0de44c98469585} 
+\index{Object@{Object}!set\+Speed@{set\+Speed}}
+\index{set\+Speed@{set\+Speed}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Speed()}{setSpeed()}}
+{\footnotesize\ttfamily void Object\+::set\+Speed (\begin{DoxyParamCaption}\item[{Vector2d const \&}]{s }\end{DoxyParamCaption})}
+
+Sets the speed of an object. \hypertarget{classObject_a3b23ad400ac8a7133fb470daa4e67467}{}\label{classObject_a3b23ad400ac8a7133fb470daa4e67467} 
+\index{Object@{Object}!set\+Texture@{set\+Texture}}
+\index{set\+Texture@{set\+Texture}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}
+{\footnotesize\ttfamily virtual void Object\+::set\+Texture (\begin{DoxyParamCaption}\item[{sf\+::\+Texture \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+virtual function for the setting of a texture. 
+
+Reimplemented in \hyperlink{classMine_a56c9fa642d918b17cb20a800e66423cb}{Mine}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classObject_aa08efab6c2c6898b1d0d7103076d8674}{}\label{classObject_aa08efab6c2c6898b1d0d7103076d8674} 
+\index{Object@{Object}!angle@{angle}}
+\index{angle@{angle}!Object@{Object}}
+\subsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily double Object\+::angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+Angle of the object in degrees. \hypertarget{classObject_abbd565f533683168a39d703f3b5c6bae}{}\label{classObject_abbd565f533683168a39d703f3b5c6bae} 
+\index{Object@{Object}!mass@{mass}}
+\index{mass@{mass}!Object@{Object}}
+\subsubsection{\texorpdfstring{mass}{mass}}
+{\footnotesize\ttfamily double Object\+::mass\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mass of the object. \hypertarget{classObject_ab77f145878370ab7b92f067432dc375c}{}\label{classObject_ab77f145878370ab7b92f067432dc375c} 
+\index{Object@{Object}!position@{position}}
+\index{position@{position}!Object@{Object}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily Vector2d Object\+::position\hspace{0.3cm}{\ttfamily [protected]}}
+
+Position of the object as a vector. \hypertarget{classObject_aacfbf5151daad699c60efc27fb702406}{}\label{classObject_aacfbf5151daad699c60efc27fb702406} 
+\index{Object@{Object}!radius@{radius}}
+\index{radius@{radius}!Object@{Object}}
+\subsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily double Object\+::radius\hspace{0.3cm}{\ttfamily [protected]}}
+
+Radius of the object. \hypertarget{classObject_a740762c9fe723eda94fe82862a8fa200}{}\label{classObject_a740762c9fe723eda94fe82862a8fa200} 
+\index{Object@{Object}!speed@{speed}}
+\index{speed@{speed}!Object@{Object}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily Vector2d Object\+::speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+Speed of the object as a vector. \hypertarget{classObject_a65be09abc56e93e0154c3a0e37f97579}{}\label{classObject_a65be09abc56e93e0154c3a0e37f97579} 
+\index{Object@{Object}!sprite@{sprite}}
+\index{sprite@{sprite}!Object@{Object}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Object\+::sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sprite of the object. \hypertarget{classObject_a8abc6192982ee39b2dc9d9b05cc155ee}{}\label{classObject_a8abc6192982ee39b2dc9d9b05cc155ee} 
+\index{Object@{Object}!texture@{texture}}
+\index{texture@{texture}!Object@{Object}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily sf\+::\+Texture Object\+::texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+Texture of the object. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/object.\+hpp\item 
+src/object.\+cpp\end{DoxyCompactItemize}

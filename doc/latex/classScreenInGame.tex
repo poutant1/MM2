@@ -1,0 +1,50 @@
+\hypertarget{classScreenInGame}{}\section{Screen\+In\+Game Class Reference}
+\label{classScreenInGame}\index{Screen\+In\+Game@{Screen\+In\+Game}}
+
+
+{\ttfamily \#include $<$screen\+\_\+ingame.\+hpp$>$}
+
+Inheritance diagram for Screen\+In\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classScreenInGame}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classScreenInGame_aa2ce63e96970e0f19e589c61dcd914d0}{Screen\+In\+Game} (std\+::shared\+\_\+ptr$<$ \hyperlink{classGameInfo}{Game\+Info} $>$ info)
+\item 
+int \hyperlink{classScreenInGame_a55d4f45872f6d488145d1cf71819b960}{Run} (sf\+::\+Render\+Window \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Screen that contains the actual gameplay. Shares information with other sceens by using the \hyperlink{classGameInfo}{Game\+Info} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classScreenInGame_aa2ce63e96970e0f19e589c61dcd914d0}{}\label{classScreenInGame_aa2ce63e96970e0f19e589c61dcd914d0} 
+\index{Screen\+In\+Game@{Screen\+In\+Game}!Screen\+In\+Game@{Screen\+In\+Game}}
+\index{Screen\+In\+Game@{Screen\+In\+Game}!Screen\+In\+Game@{Screen\+In\+Game}}
+\subsubsection{\texorpdfstring{Screen\+In\+Game()}{ScreenInGame()}}
+{\footnotesize\ttfamily Screen\+In\+Game\+::\+Screen\+In\+Game (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classGameInfo}{Game\+Info} $>$}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for the gameplay screen. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classScreenInGame_a55d4f45872f6d488145d1cf71819b960}{}\label{classScreenInGame_a55d4f45872f6d488145d1cf71819b960} 
+\index{Screen\+In\+Game@{Screen\+In\+Game}!Run@{Run}}
+\index{Run@{Run}!Screen\+In\+Game@{Screen\+In\+Game}}
+\subsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily int Screen\+In\+Game\+::\+Run (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+A function to run the scene. The actual gameplay or a menu is completely contained inside this function. 
+
+Implements \hyperlink{classcScreen_a4b4057ffec7ab1492a4de19f9994cac4}{c\+Screen}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screen\+\_\+ingame.\+hpp\item 
+src/screen\+\_\+ingame.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,111 @@
+\hypertarget{classMine}{}\section{Mine Class Reference}
+\label{classMine}\index{Mine@{Mine}}
+
+
+{\ttfamily \#include $<$mine.\+hpp$>$}
+
+Inheritance diagram for Mine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMine_a20441a92f269fcd5f011c2dc40642838}{Mine} (Vector2d, int)
+\item 
+virtual void \hyperlink{classMine_a8f28428004ed7bd212913d74fc242b3f}{collide} (\hyperlink{classObject}{Object} \&o)
+\item 
+virtual void \hyperlink{classMine_a56c9fa642d918b17cb20a800e66423cb}{set\+Texture} (sf\+::\+Texture \&)
+\item 
+void \hyperlink{classMine_a2bb4b5e254618f4ba26816d6774037ed}{update\+State} ()
+\item 
+bool \hyperlink{classMine_a697a4d8d3872b2155f85ea85347dadda}{is\+Visible} ()
+\item 
+void \hyperlink{classMine_a8f5acea497c11f9882c74c6e3f3a1554}{set\+Invisible} ()
+\item 
+void \hyperlink{classMine_a03dc6fa52215e83fe6a1aadc18c9b163}{detonate} ()
+\item 
+void \hyperlink{classMine_a6305c033929abf20ce4b1c212177d5ec}{draw} (Window \&w)
+\item 
+sf\+::\+Clock \& \hyperlink{classMine_a21cdef836d82c5fa0bed3125b338181b}{get\+Clock} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class for the sole obstacle in the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMine_a20441a92f269fcd5f011c2dc40642838}{}\label{classMine_a20441a92f269fcd5f011c2dc40642838} 
+\index{Mine@{Mine}!Mine@{Mine}}
+\index{Mine@{Mine}!Mine@{Mine}}
+\subsubsection{\texorpdfstring{Mine()}{Mine()}}
+{\footnotesize\ttfamily Mine\+::\+Mine (\begin{DoxyParamCaption}\item[{Vector2d}]{pos,  }\item[{int}]{rad }\end{DoxyParamCaption})}
+
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMine_a8f28428004ed7bd212913d74fc242b3f}{}\label{classMine_a8f28428004ed7bd212913d74fc242b3f} 
+\index{Mine@{Mine}!collide@{collide}}
+\index{collide@{collide}!Mine@{Mine}}
+\subsubsection{\texorpdfstring{collide()}{collide()}}
+{\footnotesize\ttfamily void Mine\+::collide (\begin{DoxyParamCaption}\item[{\hyperlink{classObject}{Object} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Collides the mine with another object. 
+
+Implements \hyperlink{classObject}{Object}.
+
+\hypertarget{classMine_a03dc6fa52215e83fe6a1aadc18c9b163}{}\label{classMine_a03dc6fa52215e83fe6a1aadc18c9b163} 
+\index{Mine@{Mine}!detonate@{detonate}}
+\index{detonate@{detonate}!Mine@{Mine}}
+\subsubsection{\texorpdfstring{detonate()}{detonate()}}
+{\footnotesize\ttfamily void Mine\+::detonate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Detonates the mine when it comes to contact with a vehicle. \hypertarget{classMine_a6305c033929abf20ce4b1c212177d5ec}{}\label{classMine_a6305c033929abf20ce4b1c212177d5ec} 
+\index{Mine@{Mine}!draw@{draw}}
+\index{draw@{draw}!Mine@{Mine}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Mine\+::draw (\begin{DoxyParamCaption}\item[{Window \&}]{w }\end{DoxyParamCaption})}
+
+Draws the mine on the window. \hypertarget{classMine_a21cdef836d82c5fa0bed3125b338181b}{}\label{classMine_a21cdef836d82c5fa0bed3125b338181b} 
+\index{Mine@{Mine}!get\+Clock@{get\+Clock}}
+\index{get\+Clock@{get\+Clock}!Mine@{Mine}}
+\subsubsection{\texorpdfstring{get\+Clock()}{getClock()}}
+{\footnotesize\ttfamily sf\+::\+Clock\& Mine\+::get\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the clock that controls the cooldown of the mine. \hypertarget{classMine_a697a4d8d3872b2155f85ea85347dadda}{}\label{classMine_a697a4d8d3872b2155f85ea85347dadda} 
+\index{Mine@{Mine}!is\+Visible@{is\+Visible}}
+\index{is\+Visible@{is\+Visible}!Mine@{Mine}}
+\subsubsection{\texorpdfstring{is\+Visible()}{isVisible()}}
+{\footnotesize\ttfamily bool Mine\+::is\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks whether the mine is inactive or not. \hypertarget{classMine_a8f5acea497c11f9882c74c6e3f3a1554}{}\label{classMine_a8f5acea497c11f9882c74c6e3f3a1554} 
+\index{Mine@{Mine}!set\+Invisible@{set\+Invisible}}
+\index{set\+Invisible@{set\+Invisible}!Mine@{Mine}}
+\subsubsection{\texorpdfstring{set\+Invisible()}{setInvisible()}}
+{\footnotesize\ttfamily void Mine\+::set\+Invisible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the mine inactive. \hypertarget{classMine_a56c9fa642d918b17cb20a800e66423cb}{}\label{classMine_a56c9fa642d918b17cb20a800e66423cb} 
+\index{Mine@{Mine}!set\+Texture@{set\+Texture}}
+\index{set\+Texture@{set\+Texture}!Mine@{Mine}}
+\subsubsection{\texorpdfstring{set\+Texture()}{setTexture()}}
+{\footnotesize\ttfamily void Mine\+::set\+Texture (\begin{DoxyParamCaption}\item[{sf\+::\+Texture \&}]{tex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the texture for the mine. 
+
+Reimplemented from \hyperlink{classObject_a3b23ad400ac8a7133fb470daa4e67467}{Object}.
+
+\hypertarget{classMine_a2bb4b5e254618f4ba26816d6774037ed}{}\label{classMine_a2bb4b5e254618f4ba26816d6774037ed} 
+\index{Mine@{Mine}!update\+State@{update\+State}}
+\index{update\+State@{update\+State}!Mine@{Mine}}
+\subsubsection{\texorpdfstring{update\+State()}{updateState()}}
+{\footnotesize\ttfamily void Mine\+::update\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the mine\textquotesingle{}s state, including its position. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/mine.\+hpp\item 
+src/mine.\+cpp\end{DoxyCompactItemize}
